@@ -5,6 +5,7 @@ from string import punctuation
 st.title('Welcome to the pxtextmining API tester')
 
 st.write('This page will allow you to query the pxtextmining API without any coding knowledge. Enter any text comment and see what labels the current model would apply to your text!')
+st.write('The model currently used was trained in May 2023 and is a work in progress.')
 
 question_type = st.selectbox('What is the type of FFT question?', ('Mixed or nonspecific question', 'What did we do well?', 'What could we improve?') )
 if question_type == 'What did we do well?':

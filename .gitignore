@@ -1,3 +1,9 @@
 .streamlit/*
 .python-version
 rsconnect-python/*
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto

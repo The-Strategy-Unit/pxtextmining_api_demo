@@ -4,8 +4,8 @@ from string import punctuation
 
 st.title('Welcome to the pxtextmining API tester')
 
-st.write('This page will allow you to query the [pxtextmining](https://github.com/CDU-data-science-team/pxtextmining) API without any coding knowledge. Enter any text comment and see what labels the current model would apply to your text!')
-st.write('The model currently used was trained in May 2023 and is a work in progress. For further information, please visit the [Patient Experience Qualitative Data Categorisation project website](https://cdu-data-science-team.github.io/PatientExperience-QDC).')
+st.write('This page will allow you to query the [pxtextmining](https://github.com/The-Strategy-Unit/pxtextmining/) API without any coding knowledge. Enter any text comment and see what labels the current model would apply to your text!')
+st.write('The model currently used was trained in May 2023 and is a work in progress. For further information, please visit the [Patient Experience Qualitative Data Categorisation project website](https://the-strategy-unit.github.io/PatientExperience-QDC/).')
 
 question_type = st.selectbox('What is the type of FFT question?', ('Mixed or nonspecific question', 'What did we do well?', 'What could we improve?') )
 if question_type == 'What did we do well?':
@@ -22,7 +22,7 @@ if question_type == 'Mixed or nonspecific question':
 comment_text = st.text_input('Please enter the comment text to be labelled', value="The nurses were lovely but it was difficult to find parking.")
 
 endpoint = f"{st.secrets['API_URL']}/predict_multilabel"
-docs_url = "https://cdu-data-science-team.github.io/PatientExperience-QDC/framework/framework3.html#"
+docs_url = "https://the-strategy-unit.github.io/PatientExperience-QDC/framework/framework3.html#"
 
 docs_dict = {'Gratitude/ good experience': 'General',
  'Negative experience': 'General',

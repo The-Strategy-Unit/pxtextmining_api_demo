@@ -6,7 +6,7 @@ A simple Streamlit app for demonstrating [the pxtextmining API](https://github.c
 
 To run the app locally on your computer:
 
-1. Clone the repository to your machine.
+1. Fork or clone the repository to your machine.
 1. Create a virtual environment (e.g. `uv venv`).
 1. Install the dependencies listed in `requirements.txt` (e.g. `uv pip install -r requirements.txt`).
 1. Create a `.streamlit/secrets.toml` file and add the variable `API_URL=<API URL endpoint>`.
